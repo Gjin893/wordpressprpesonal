@@ -1,0 +1,1 @@
+<p><?php echo esc_html(get_theme_mod('footer_text')); ?></p>
