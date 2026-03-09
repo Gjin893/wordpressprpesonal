@@ -1,0 +1,173 @@
+/* HERO */
+
+.hero{
+
+background:url("../images/gym-bg.jpg") center/cover no-repeat;
+height:500px;
+
+display:flex;
+align-items:center;
+justify-content:center;
+text-align:center;
+
+color:white;
+
+}
+
+.hero h1{
+
+font-size:50px;
+margin-bottom:20px;
+
+}
+
+.hero p{
+
+font-size:20px;
+margin-bottom:30px;
+
+}
+
+/* GRID SYSTEM */
+
+.classes-grid,
+.trainers-grid,
+.membership-grid,
+.posts-grid{
+
+display:grid;
+grid-template-columns:repeat(auto-fit,minmax(280px,1fr));
+gap:30px;
+
+}
+
+/* CARDS */
+
+.class-card,
+.trainer-card,
+.post-card,
+.plan{
+
+background:white;
+padding:20px;
+border-radius:6px;
+box-shadow:0 3px 8px rgba(0,0,0,.1);
+
+transition:.3s;
+
+}
+
+.class-card:hover,
+.trainer-card:hover,
+.post-card:hover{
+
+transform:translateY(-5px);
+
+}
+
+/* IMAGES */
+
+.class-img img,
+.trainer-card img{
+
+width:100%;
+border-radius:6px;
+
+}
+
+/* MEMBERSHIP */
+
+.plan{
+
+text-align:center;
+
+}
+
+.price{
+
+font-size:28px;
+color:var(--primary);
+margin:10px 0;
+
+}
+
+.plan ul{
+
+list-style:none;
+margin:20px 0;
+
+}
+
+.plan li{
+
+padding:6px 0;
+
+}
+
+/* TESTIMONIALS */
+
+.testimonial{
+
+background:white;
+padding:20px;
+margin:15px 0;
+border-left:4px solid var(--primary);
+
+}
+
+/* SEARCH */
+
+#gym-search{
+
+position:relative;
+
+}
+
+#search-input{
+
+padding:10px;
+width:250px;
+border:1px solid #ccc;
+border-radius:4px;
+
+}
+
+#search-results{
+
+position:absolute;
+background:white;
+width:100%;
+border:1px solid #ddd;
+display:none;
+z-index:10;
+
+}
+
+#search-results a{
+
+display:block;
+padding:10px;
+
+}
+
+#search-results a:hover{
+
+background:#f1f1f1;
+
+}
+
+/* RESPONSIVE */
+
+@media(max-width:768px){
+
+.hero h1{
+font-size:36px;
+}
+
+nav ul{
+
+flex-direction:column;
+
+}
+
+}

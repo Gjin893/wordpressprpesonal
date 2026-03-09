@@ -1,0 +1,119 @@
+/*
+Theme Name: Gym Pro Theme
+Theme URI: https://example.com
+Author: Gjin
+Description: Advanced Gym WordPress Theme
+Version: 1.0
+License: GPL v2 or later
+Text Domain: gympro
+*/
+
+/* Reset */
+
+*{
+margin:0;
+padding:0;
+box-sizing:border-box;
+}
+
+/* Root Variables */
+
+:root{
+
+--primary:#ff3c00;
+--secondary:#111;
+--light:#f5f5f5;
+--text:#333;
+
+--container:1200px;
+
+}
+
+/* Global */
+
+body{
+
+font-family: "Segoe UI", Arial, sans-serif;
+background:var(--light);
+color:var(--text);
+line-height:1.6;
+
+}
+
+.container{
+
+max-width:var(--container);
+margin:auto;
+padding:20px;
+
+}
+
+/* Links */
+
+a{
+text-decoration:none;
+color:var(--primary);
+}
+
+a:hover{
+opacity:.8;
+}
+
+/* Buttons */
+
+.btn{
+
+display:inline-block;
+background:var(--primary);
+color:white;
+padding:12px 25px;
+border-radius:4px;
+transition:0.3s;
+
+}
+
+.btn:hover{
+background:#cc3000;
+
+}
+
+/* Header */
+
+header{
+
+background:var(--secondary);
+color:white;
+
+}
+
+header h1{
+
+font-size:26px;
+
+}
+
+nav ul{
+
+display:flex;
+list-style:none;
+gap:20px;
+
+}
+
+nav a{
+
+color:white;
+font-weight:500;
+
+}
+
+/* Footer */
+
+footer{
+
+background:#111;
+color:white;
+text-align:center;
+padding:30px;
+
+}
